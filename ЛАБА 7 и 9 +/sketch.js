@@ -128,7 +128,7 @@ function setup() {
     pauseButton.mouseOut(() => pauseButton.style('background-color', '#0a0a0a'));
 
     // кнопка "увеличить громкость"
-    volumeButton = createButton('Volume');
+    volumeButton = createButton('+ Volume');
     volumeButton.position(950, height - 70);
     volumeButton.size(50, 50);
     volumeButton.style('border-radius', '50%');
@@ -150,13 +150,13 @@ function setup() {
     });
     volumeButton.mouseOut(() => {
         volumeButton.style('background-color', '#0a0a0a');
-        volumeButton.html('Volume');
+        volumeButton.html('+ Volume');
         volumeButton.style('color', 'white');
     });
 
     // кнопка "увеличить скорость"
-    speedButton = createButton('Speed');
-    speedButton.position(890, height - 70);
+    speedButton = createButton('+ Speed');
+    speedButton.position(100, height - 70);
     speedButton.size(50, 50);
     speedButton.style('border-radius', '50%');
     speedButton.style('background-color', '#0a0a0a');
@@ -174,13 +174,13 @@ function setup() {
     });
     speedButton.mouseOut(() => {
         speedButton.style('background-color', '#0a0a0a');
-        speedButton.html('Speed');
+        speedButton.html('+ Speed');
         speedButton.style('color', 'white');
     });
     
     //кнопка "уменьшить громкость"
-    decreaseVolumeButton = createButton('Volume');
-    decreaseVolumeButton.position(38, height - 70);
+    decreaseVolumeButton = createButton('- Volume');
+    decreaseVolumeButton.position(890, height - 70);
     decreaseVolumeButton.size(50, 50);
     decreaseVolumeButton.style('border-radius', '50%');
     decreaseVolumeButton.style('background-color', '#0a0a0a');
@@ -197,13 +197,13 @@ function setup() {
     });
     decreaseVolumeButton.mouseOut(() => {
         decreaseVolumeButton.style('background-color', '#0a0a0a');
-        decreaseVolumeButton.html('Volume');
+        decreaseVolumeButton.html('- Volume');
         decreaseVolumeButton.style('color', 'white');
     });
     
     //кнопка "уменьшить скорость"
-    decreaseSpeedButton = createButton('Speed');
-    decreaseSpeedButton.position(100, height - 70);
+    decreaseSpeedButton = createButton('- Speed');
+    decreaseSpeedButton.position(38, height - 70);
     decreaseSpeedButton.size(50, 50);
     decreaseSpeedButton.style('border-radius', '50%');
     decreaseSpeedButton.style('background-color', '#0a0a0a');
@@ -220,7 +220,7 @@ function setup() {
     });
     decreaseSpeedButton.mouseOut(() => {
         decreaseSpeedButton.style('background-color', '#0a0a0a');
-        decreaseSpeedButton.html('Speed');
+        decreaseSpeedButton.html('- Speed');
         decreaseSpeedButton.style('color', 'white');
     });
     
@@ -322,7 +322,7 @@ function draw() {
         // отображение названия текущей песни
         fill(255);
         textSize(15);
-        text(currentTrackName, width / 2 - 250, height / 2 + 235); // название песни
+        text(currentTrackName, width / 2 - 270, height / 2 + 235); // название песни
     }
     
     // отображение иконок громкости и скорости
